@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-primaria:#1e3a8a;
+    --cor-secundaria:#f97316;
+    --cor-tercearia:#f8fafc;
+    --cor-quarta: #60a5fa;
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-corpo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 100
+}
+
+/* --------HEADER-------- */
+
+.header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 1.5rem 10rem 1.5rem 10rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 16px hsla(220, 32%, 8%, .3);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.material-symbols-outlined {
+    color: var(--cor-tercearia);
+    padding: 0 1rem 0 1rem;
+}
+.icons{
+    display: flex;
+    padding-right: 10px;
+    list-style: none;
+    margin: 1rem;
+}
+.icons li a {
+    color: var(--cor-tercearia);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.icons li a:hover{
+    color: var(--cor-secundaria);
+}
+
+.material-symbols-outlined :hover{
+ color: var(--cor-secundaria);
+}
+.esquerda{
+    display: flex;
+
+}
+.logo .material-symbols-outlined{
+    font-size: 2.5rem;
+}
+.logo_titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-tercearia);
+}
+
+/* --------SEARCH BAR-------- */
+
+.search{
+    background-color: var(--cor-tercearia);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+.search button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 0.6rem;
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-corpo);
+    font-size: smaller;
+    font-weight: bold;
+    text-decoration: none;
+}
+.search button:hover{
+    background-color: #e76407;
+}
+
+.input{
+    padding: 8px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 20rem;
+}
+
+/* --------CATEGORIAS E DROPDOWN-------- */
+
+.categorias{
+    padding: 1rem;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 139, 0.1);
+    text-align: center;
+}
+.categorias ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    position: relative;
+}
+.paragrafo {
+    display: block;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    padding: 3rem 2rem;
+    z-index: 10;
+}
+.nav_link{
+    padding: 1rem 1.5rem;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+    font-size: 0.7rem;
+    background-color: var(--cor-quarta);
+    border-radius: 15px;
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+    display: flex;
+    transition: all 0.3s ease;  
+}
+.nav_link:hover{
+    background: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+    transform: translateY(+3px);
+    box-shadow: 0 4px 12px rgba(54, 74, 97, 0.3);
+}
+.categorias li:hover .dropdown{
+    display: flex;
+}
+
+.nav_lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --------MODELO REPONSIVO-------- */

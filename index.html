@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo digital</title>
+    <link rel="stylesheet" href=".//estilos/estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ----------HEADER---------- -->
+
+    <header class="header">
+      <div class="esquerda">
+        <div class="logo">
+          <a href="#"
+            ><span class="material-symbols-outlined"
+              >shopping_bag_speed</span
+            ></a
+          >
+        </div>
+
+        <div class="logo_titulo">
+          <h1>Catálogo Digital</h1>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="icons">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Carrinho</a></li>
+        </ul>
+      </nav>
+
+     <!-- ----------SEARCH BAR---------- -->
+
+      <div class="search">
+        <input
+          type="search"
+          class="input"
+          id="searchInput"
+          placeholder="Buscar produtos..."
+        />
+        <label for="search">
+          <button type="submit">Buscar</button>
+        </label>
+      </div>
+    </header>
+
+    <!-- ----------CATEGORIAS---------- -->
+
+    <section class="categorias">
+        <ul>
+            <li>
+                <a href="" onclick="show()" class="paragrafo">Categorias ▼</a>
+                <ul class="dropdown">
+                    <li><a href="#" class="nav_link">ALUMINIZADO</a></li>
+                    <li><a href="#" class="nav_link">CONFEITARIA</a></li>
+                    <li><a href="#" class="nav_link">ISOPOR</a></li>
+                    <li><a href="#" class="nav_link">POTES</a></li>
+                    <li><a href="#" class="nav_link">TAMPA</a></li>
+                    <li><a href="#" class="nav_link">FILME</a></li>
+                    <li><a href="#" class="nav_link">PVC</a></li>
+                </ul>
+            </li>
+        </ul>
+        <script src="./principal.js" >
+
+        </script>
+    </section>
+
+</body>
+</html>
+
