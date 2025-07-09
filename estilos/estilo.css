@@ -121,7 +121,6 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    gap: 1rem;
     position: relative;
 }
 .paragrafo {
@@ -129,29 +128,43 @@
     cursor: pointer;
     padding: 1rem 1rem;
     font-weight: 600;
-    font-size: 2rem;
-    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
     text-decoration: none;
+    font-family: var(--fonte-titulo);
     color: var(--cor-secundaria);
+    transition: transform 0.3s ease;
+}
+.paragrafo:hover{
+    transform: scale(1.2);
 }
 .dropdown{
     display: none;
+    flex-wrap: wrap;
     position: absolute;
     background-color: aliceblue;
-    padding: 3rem 2rem;
+
     z-index: 10;
+    transition: all 0.4s ease;
+}
+.dropdown.show {
+    display: flex;
+    justify-content: center;
 }
 .nav_link{
-    padding: 1rem 1.5rem;
-    color: var(--cor-tercearia);
-    text-decoration: none;
-    font-size: 0.7rem;
     background-color: var(--cor-quarta);
-    border-radius: 15px;
+    color: var(--cor-tercearia);
     font-family: var(--fonte-corpo);
+    text-decoration: none;
+    font-size: 1rem;
     font-weight: 500;
-    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
     transition: all 0.3s ease;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
 }
 .nav_link:hover{
     background: var(--cor-secundaria);
@@ -159,16 +172,6 @@
     transform: translateY(+3px);
     box-shadow: 0 4px 12px rgba(54, 74, 97, 0.3);
 }
-.categorias li:hover .dropdown{
-    display: flex;
-}
 
-.nav_lista{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
 
 /* --------MODELO REPONSIVO-------- */
