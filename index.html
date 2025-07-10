@@ -16,7 +16,6 @@
   </head>
 
   <body>
-
     <!-- ----------HEADER---------- -->
 
     <header class="header">
@@ -38,11 +37,10 @@
         <ul class="icons">
           <li><a href="#">Início</a></li>
           <li><a href="#">Contato</a></li>
-          <li><a href="#">Carrinho</a></li>
         </ul>
       </nav>
 
-     <!-- ----------SEARCH BAR---------- -->
+      <!-- ----------SEARCH BAR---------- -->
 
       <div class="search">
         <input
@@ -55,32 +53,80 @@
           <button type="submit">Buscar</button>
         </label>
       </div>
+
+      <!-- ----------SHOPPING CART---------- -->
+      <div class="icon_cart" onclick="toggleCart()">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <!-- <span class="contagem_cart" id="contagemCart"> 0 </span> -->
+      </div>
     </header>
 
     <!-- ----------CATEGORIAS---------- -->
 
     <section class="categorias">
-        <ul>
-            <li>
-                <a href="#" onclick="show()" class="paragrafo" id="paragrafo">Categorias ▼</a>
-                <ul id="dropdown" class="dropdown">
-                    <li><a href="#" class="nav_link">ALUMINIZADO</a></li>
-                    <li><a href="#" class="nav_link">CONFEITARIA</a></li>
-                    <li><a href="#" class="nav_link">ISOPOR</a></li>
-                    <li><a href="#" class="nav_link">POTES</a></li>
-                    <li><a href="#" class="nav_link">TAMPA</a></li>
-                    <li><a href="#" class="nav_link">FILME</a></li>
-                    <li><a href="#" class="nav_link">PVC</a></li>
-                </ul>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#" onclick="show()" class="paragrafo" id="paragrafo"
+            >Categorias ▼</a
+          >
+          <ul id="dropdown" class="dropdown">
+            <li><a href="#" class="nav_link">ALUMINIZADO</a></li>
+            <li><a href="#" class="nav_link">CONFEITARIA</a></li>
+            <li><a href="#" class="nav_link">ISOPOR</a></li>
+            <li><a href="#" class="nav_link">POTES</a></li>
+            <li><a href="#" class="nav_link">TAMPA</a></li>
+            <li><a href="#" class="nav_link">FILME</a></li>
+            <li><a href="#" class="nav_link">PVC</a></li>
+            <li><a href="#" class="nav_link">MULTIUSO</a></li>
+            <li><a href="#" class="nav_link">DIVERSOS</a></li>
+            <li><a href="#" class="nav_link">FESTA</a></li>
+            <li><a href="#" class="nav_link">PANO</a></li>
 
-        <script src="./principal.js" >
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- ----------CATALOGO------- -->
+    <section class="catalogo">
+      <h1>Catálogo</h1>
 
+      <div class="lista_produto">
 
-        </script>
+        <div class="item">
+          <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt=" produto"/>
+          <h2>Embalagem de Teste</h2>
+          <div class="valor">R$ 50,00</div>
+          <button class="addcart">Adicionar Ao Carrinho</button>
+          </div>
+        <div class="item">
+          <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt=" produto"/>
+          <h2>Embalagem de Teste</h2>
+          <div class="valor">R$ 50,00</div>
+          <button class="addcart">Adicionar Ao Carrinho</button>
+          </div>
+        <div class="item">
+          <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt=" produto"/>
+          <h2>Embalagem de Teste</h2>
+          <div class="valor">R$ 50,00</div>
+          <button class="addcart">Adicionar Ao Carrinho</button>
+          </div>
+        <div class="item">
+          <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt=" produto"/>
+          <h2>Embalagem de Teste</h2>
+          <div class="valor">R$ 50,00</div>
+          <button class="addcart">Adicionar Ao Carrinho</button>
+          </div>
+      </div>
     </section>
 
-</body>
-</html>
+    <!-- ----------ABA DE CARRINHO---------- -->
+    <section class="tab_carrinho">
+      <h1> Lista de compras</h1>
+      <div class="lista_carrinho">
 
+      </div>
+    </section>
+
+    <script src="./principal.js"></script>
+  </body>
+</html>

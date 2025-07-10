@@ -11,5 +11,4 @@
 function show() {
     const div = document.getElementById('dropdown');
     div.classList.toggle('show');
-    //  document.getElementById('paragrafo').innerHTML = "Categorias ▲"
 }
