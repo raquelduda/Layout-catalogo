@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <div class="container">
     <!-- ----------HEADER---------- -->
 
     <header class="header">
@@ -55,8 +56,8 @@
       </div>
 
       <!-- ----------SHOPPING CART---------- -->
-      <div class="icon_cart" onclick="toggleCart()">
-        <span class="material-symbols-outlined">shopping_cart</span>
+      <div class="icon_cart" >
+        <span class="material-symbols-outlined" id="iconCart">shopping_cart</span>
         <!-- <span class="contagem_cart" id="contagemCart"> 0 </span> -->
       </div>
     </header>
@@ -120,13 +121,58 @@
     </section>
 
     <!-- ----------ABA DE CARRINHO---------- -->
-    <section class="tab_carrinho">
+    <div class="tab_carrinho" id="tabCarrinho">
+
+      <div class="topo_carrinho">
       <h1> Lista de compras</h1>
-      <div class="lista_carrinho">
 
+      <div class="x_carrinho">
+        <span class="material-symbols-outlined" id="iconX">close</span>
       </div>
-    </section>
+      </div>
 
+      <div class="lista_carrinho">
+        <div class="item">
+          <div class="img">
+            <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt="">
+          </div>
+
+          <div class="nome">
+            Embalagem de Teste
+          </div>
+
+           <div class="valor">R$50</div>
+
+          <div class="quantidade">
+            <span class="menos"> < </span>
+            <span>1</span>
+            <span class="mais"> > </span>            
+          </div>
+          
+        </div>
+        
+        <div class="item">
+          <div class="img">
+            <img src="./img/produto-teste-apenas-amostra-da8bde6b-x67mxgdm29.webp" alt="">
+          </div>
+
+          <div class="nome">
+            Embalagem de Teste
+          </div>
+
+           <div class="valor">R$50</div>
+
+          <div class="quantidade">
+            <span class="menos"> < </span>
+            <span>1</span>
+            <span class="mais"> > </span>            
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+</div>
     <script src="./principal.js"></script>
   </body>
 </html>

@@ -194,11 +194,11 @@
 /* SHOPPING CART */
 .icon_cart {
     margin: 0 0 0 2rem;
+    cursor: pointer;
 }
 
 .icon_cart .material-symbols-outlined {
     font-size: 1.8rem;
-    position: relative;
 }
 
 .icon_cart .material-symbols-outlined:hover {
@@ -206,8 +206,7 @@
 }
 
 /* ---------- CATALOGO DE PRODUTO ---------- */
-.catalogo{
-}
+
 .catalogo h1{
     text-align: center;
     padding: 2rem;
@@ -234,9 +233,7 @@
     gap: 2rem;
     padding: 0rem 2rem 2rem 2rem;
 }
-.item{
 
-}
 .item h2 {
     font-family: var(--fonte-titulo);
     font-weight: 400;
@@ -268,8 +265,86 @@
     transform: translateY(+3px);
 }
 
+/* ----------ABA DO CARRINHO---------- */
+.tab_carrinho{
+    position:fixed;
+    width: 22rem;
+    height: 100%;
+    z-index: 1;
+    color: var(--cor-tercearia);
+    background-color: var(--cor-primaria);
+    transition:0.4s;
+    inset: 0 -400px 0 auto;
 
-/* --------MODELO REPONSIVO-------- */
+}
+body.showCart .tab_carrinho {
+    inset:  0 0 0 auto;
+}
+.carrinho {
+  right: -100%;
+  transition: right 0.3s ease;
+  position: fixed;
+}
+.x_carrinho .material-symbols-outlined{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 100;
+    display: inline-block;
+}
+.topo_carrinho{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+.topo_carrinho h1{
+    font-family: var(--fonte-corpo);
+    font-weight: 350;
+    font-size: 1.9rem;
+}
+
+.tab_carrinho .lista_carrinho .item img{
+    width: 100%;
+}
+.tab_carrinho .lista_carrinho .item{
+    display: grid;
+    grid-template-columns: 70px 100px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: smaller;
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+}
+
+.tab_carrinho .quantidade span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.tab_carrinho .quantidade span:nth-child(2){
+    background-color: transparent;
+    color: var(--cor-tercearia);
+}
+.lista_carrinho .item:nth-child(even){
+    background-color: #2447a6;
+}
+.lista_carrinho {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: var(--cor-secundaria);
+}
+.lista_carrinho::-webkit-scrollbar{
+    width: 0;
+}
+MODELO REPONSIVO-------- */
 
 @media (max-width: 700px) {
     .lista_produto{

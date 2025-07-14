@@ -1,14 +1,16 @@
-
-// function show() {
-//     const div = document.getElementById('dropdown');
-//     if (div.style.display === 'none') {
-//         div.style.display = 'flex';
-//     } else {
-//         div.style.display = 'none';
-//     }
-// }
-
 function show() {
     const div = document.getElementById('dropdown');
     div.classList.toggle('show');
 }
+
+let iconCarrinho = document.querySelector('.icon_cart');
+let fecharCarrinho = document.querySelector('.x_carrinho');
+let body = document.querySelector('body');
+
+iconCarrinho.addEventListener('click', () => {
+  body.classList.add('showCart');
+});
+
+fecharCarrinho.addEventListener('click', () => {
+  body.classList.remove('showCart');
+});
