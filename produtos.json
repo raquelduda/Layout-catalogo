@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/1.png"
+    },
+    {
+        "id":2,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/2.png"
+    },
+    {
+        "id":3,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/3.png"
+    },
+    {
+        "id":4,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/4.png"
+    },
+    {
+        "id":5,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/5.png"
+    },
+    {
+        "id":6,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/6.png"
+    },
+    {
+        "id":7,
+        "nome": "Embalagem de Teste", 
+        "preço": 50,
+        "imagem":"image/7.png"
+    }
+
+]
