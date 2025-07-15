@@ -1,8 +1,9 @@
-// cropdown das categorias
+// dropdown das categorias
 function show() {
     const div = document.getElementById('dropdown');
     div.classList.toggle('show');
 }
+
 // abrir e fechar tab de carrinho
 let iconCarrinho = document.querySelector('.icon_cart');
 let fecharCarrinho = document.querySelector('.x_carrinho');
